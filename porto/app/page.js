@@ -1,6 +1,8 @@
 import Navbar from "./Navbar";
 import Image from 'next/image'
-import Script from 'next/script'
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
 
 
 export default function Page() {
@@ -14,17 +16,17 @@ export default function Page() {
             <div className = "bg-bgr-colors-1">
               <div style={{padding: "20px", display: "flex", alignItems: "center", marginTop:"50px"}}>
                 <div style={{marginRight:"200px", marginLeft:"50px", fontFamily:"Inter"}}>
-                  <h1 style={{ fontSize: "16px", color:"#04043d", lineHeight:"0", marginTop:"40px"}}>
+                  <h1 className={inter.className} style={{ fontSize: "16px", color:"#04043d", lineHeight:"0", marginTop:"40px"}}>
                     Let&apos;s learn something new together!
                   </h1>
-                  <h1 style={{ fontSize: "72px", fontWeight:"Bold"}}>
+                  <h1 className={inter.className} style={{ fontSize: "72px", fontWeight:"Bold"}}>
                     <span style = {{color:"#04043d"}}>Hi, I&apos;m </span>
                     <span style = {{color:"#0d98b8"}}>Fariz Rifqi</span>
                   </h1>
                   <div style={{height: "1px", backgroundColor: "#003B46", margin: "5px" }}>
                   </div>
-                  <h6 style = {{color:"#333333", fontFamily:"Inter", fontSize:"20px", marginTop:"15px", fontWeight:"500"}}>
-                    I’m currently a second-year computer science in <br></br>
+                  <h6 className={inter.className} style = {{color:"#333333", fontSize:"20px", marginTop:"15px", fontWeight:"500"}}>
+                    I&apos;m currently a second-year computer science in <br></br>
                     Bandung Institute of Technology. I have more <br></br>
                     than 4 years of experience in Competitive <br></br>
                     Programming. I am currently in the process of <br></br>
@@ -87,8 +89,10 @@ export default function Page() {
                   />   
                 </a>
 
-                <a href="/">
-                    <h1 className='transition-transform duration-300 hover:scale-110 hover:shadow-lg p-1' style = {{fontFamily:"Inter", fontWeight:"700", fontSize:"24px", color:"#04043d", marginLeft:"40px"}}> MY RESUME </h1>
+                <a href="https://drive.google.com/file/d/1QrotZ5aboPKPsFHlmMaj0o4nFZKnMFgR/view?usp=sharing">
+                    <div className = {inter.className}>
+                        <h1 className= '{inter.className} transition-transform duration-300 hover:scale-110 hover:shadow-lg p-1' style = {{fontWeight:"700", fontSize:"24px", color:"#04043d", marginLeft:"40px"}}> MY RESUME </h1>
+                    </div>
                 </a>
                 
               </div>
@@ -111,10 +115,10 @@ export default function Page() {
           <section id="About">
             <div className = "bg-bgr-colors-2">
               <div className="text-center">
-                  <h1 style = {{fontFamily:"Inter", fontWeight:"700", fontSize:"24px", color:"#04043d", padding:"30px", lineHeight:"0", paddingTop:"50px"}}>
+                  <h1 className={inter.className} style = {{fontWeight:"700", fontSize:"24px", color:"#04043d", padding:"30px", lineHeight:"0", paddingTop:"50px"}}>
                     Who Am I?
                   </h1>
-                  <h2 style = {{fontFamily:"Inter", fontWeight:"500", fontSize:"16px", color:"#333333", marginBottom:"20px"}}>
+                  <h2 className={inter.className} style = {{fontWeight:"500", fontSize:"16px", color:"#333333", marginBottom:"20px"}}>
                     Once again, I’m Mochammad Fariz Rifqi Rizqulloh, nice to meet you :D
                   </h2>
 
@@ -123,10 +127,10 @@ export default function Page() {
 
               <div className="grid grid-cols-2" style={{padding:"50px"}}>
                 <div className="border-r-2 border-black">
-                  <h1 style = {{fontFamily:"Inter", fontWeight:"700", fontSize:"24px", color:"#04043d"}}>
+                  <h1 className={inter.className} style = {{fontWeight:"700", fontSize:"24px", color:"#04043d"}}>
                     Competitive Programming Tutor
                   </h1>
-                  <h2 style = {{fontFamily:"Inter", fontWeight:"400", fontSize:"16px", color:"#333333", marginRight:"50px"}}>
+                  <h2 className={inter.className} style = {{fontWeight:"400", fontSize:"16px", color:"#333333", marginRight:"50px"}}>
                     In my free time, I often teach many students from all over Indonesia, both in class and one-on-one (private lessons), preparing them for the City, Provincial, and National levels of the National Science Olympiad
                     
                     <br></br>
@@ -135,49 +139,49 @@ export default function Page() {
                     Many company already had called me to became tutor in their class, such as Kokocoder, Afaslearn, ALC Education, KOJA Competition, OBER, Scuola, etc.
                   </h2>
 
-                  <h1 style = {{fontFamily:"Inter", fontWeight:"700", fontSize:"24px", color:"#04043d", marginTop : "50px"}}>
+                  <h1 className={inter.className} style = {{fontWeight:"700", fontSize:"24px", color:"#04043d", marginTop : "50px"}}>
                     Staff of Academics of STEI-K ITB 2023
                   </h1>
-                  <h2 style = {{fontFamily:"Inter", fontWeight:"400", fontSize:"16px", color:"#333333", marginRight:"50px"}}>
+                  <h2 className={inter.className} style = {{fontWeight:"400", fontSize:"16px", color:"#333333", marginRight:"50px"}}>
                     In charge of managing a team of 6 staff members tasked for providing peer tutoring and supplementary study materials, organizing and maintaining a repository of past exams, authoring exam solution manuals for 300+ students
                   </h2>
 
-                  <h1 style = {{fontFamily:"Inter", fontWeight:"700", fontSize:"24px", color:"#04043d", marginTop : "50px"}}>
+                  <h1 className={inter.className} style = {{fontWeight:"700", fontSize:"24px", color:"#04043d", marginTop : "50px"}}>
                     Vice Leader of Olympiad - IMPACT 4.0 STEI-K ITB 2023
                   </h1>
-                  <h2 style = {{fontFamily:"Inter", fontWeight:"400", fontSize:"16px", color:"#333333", marginRight:"50px"}}>
+                  <h2 className={inter.className} style = {{fontWeight:"400", fontSize:"16px", color:"#333333", marginRight:"50px"}}>
                     In charge of managing a team of 19 staff members tasked for problemsetting, test-case generation, and contest management for 300+ participants
                   </h2>
 
                 </div>
                 <div style={{paddingLeft:"50px"}}>
-                  <h2 style = {{fontFamily:"Inter", fontWeight:"700", fontSize:"20px", color:"#0d98b8", lineHeight:"1"}}>
+                  <h2 className={inter.className} style = {{fontWeight:"700", fontSize:"20px", color:"#0d98b8", lineHeight:"1"}}>
                     2017 - 2020
                   </h2>
-                  <h1 style = {{fontFamily:"Inter", fontWeight:"700", fontSize:"24px", color:"#04043d"}}>
+                  <h1 className={inter.className} style = {{fontWeight:"700", fontSize:"24px", color:"#04043d"}}>
                     SMPN 2 Jombang
                   </h1>
-                  <h2 style = {{fontFamily:"Inter", fontWeight:"400", fontSize:"16px", color:"#333333", marginRight:"30px"}}>
+                  <h2 className={inter.className} style = {{fontWeight:"400", fontSize:"16px", color:"#333333", marginRight:"30px"}}>
                     I spent most of my times preparing myself for National Olympiad in Matematics (OSN), and i became OSN 2018 and OSN 2019 Finalist. Alas, i didn’t get any medal. However, i won more than 20 Mathematics Competition in process
                   </h2>
 
-                  <h2 style = {{fontFamily:"Inter", fontWeight:"700", fontSize:"20px", color:"#0d98b8", lineHeight:"1", marginTop:"50px"}}>
+                  <h2 className={inter.className} style = {{fontWeight:"700", fontSize:"20px", color:"#0d98b8", lineHeight:"1", marginTop:"50px"}}>
                     2020 - 2023
                   </h2>
-                  <h1 style = {{fontFamily:"Inter", fontWeight:"700", fontSize:"24px", color:"#04043d"}}>
+                  <h1 className={inter.className} style = {{fontWeight:"700", fontSize:"24px", color:"#04043d"}}>
                     SMA Semesta BBS Semarang
                   </h1>
-                  <h2 style = {{fontFamily:"Inter", fontWeight:"400", fontSize:"16px", color:"#333333", marginRight:"30px"}}>
+                  <h2 className={inter.className} style = {{fontWeight:"400", fontSize:"16px", color:"#333333", marginRight:"30px"}}>
                     I got a scholarship that almost fully funded my tuition fee. From here, i spent most of my times preparing myself for National Olympiad in Informatics (KSN), and i became KSN 2021 Bronze Medalist.  
                   </h2>
 
-                  <h2 style = {{fontFamily:"Inter", fontWeight:"700", fontSize:"20px", color:"#0d98b8", lineHeight:"1", marginTop:"50px"}}>
+                  <h2 className={inter.className} style = {{fontWeight:"700", fontSize:"20px", color:"#0d98b8", lineHeight:"1", marginTop:"50px"}}>
                     2023 - NOW
                   </h2>
-                  <h1 style = {{fontFamily:"Inter", fontWeight:"700", fontSize:"24px", color:"#04043d"}}>
+                  <h1 className={inter.className} style = {{fontWeight:"700", fontSize:"24px", color:"#04043d"}}>
                     Bandung Institute of Technology
                   </h1>
-                  <h2 style = {{fontFamily:"Inter", fontWeight:"400", fontSize:"16px", color:"#333333", marginRight:"30px"}}>
+                  <h2 className={inter.className} style = {{fontWeight:"400", fontSize:"16px", color:"#333333", marginRight:"30px"}}>
                     I got a scholarship from Beasiswa Unggulan provided by Ministry of Education and Culture, Language and Technology. I still actively compete in Competitive Programming, and teach a lot of students for OSN preparations.  
                   </h2>
                 </div>
@@ -190,17 +194,20 @@ export default function Page() {
           <section id="Skill">
             <div className = "bg-bgr-colors-3">
               <div className="text-center">
-                  <h1 style = {{fontFamily:"Inter", fontWeight:"700", fontSize:"24px", color:"#04043d", padding:"30px", paddingTop:"50px", lineHeight:"0"}}>
+                  <h1 className={inter.className} style = {{fontWeight:"700", fontSize:"24px", color:"#04043d", padding:"30px", paddingTop:"50px", lineHeight:"0"}}>
                     Skills
                   </h1>
-                  <h2 style = {{fontFamily:"Inter", fontWeight:"500", fontSize:"16px", color:"#333333", marginBottom:"20px"}}>
+                  <h2 className={inter.className} style = {{fontWeight:"500", fontSize:"16px", color:"#333333", marginBottom:"20px"}}>
                     What am i capable of?
                   </h2>
 
                   <div style={{height: "1px", backgroundColor: "#07575B", marginLeft:"300px", marginRight:"300px", marginBottom:"0px", display: "flex"}}> </div>
               </div>
-
-              <h2 className="text-center" style = {{color:"#333333", margin:"30px"}}> This Section Is Still Under Development, Stay Tune! </h2>
+              
+              <div className={inter.className}>
+                <h2 className="text-center" style = {{color:"#333333", margin:"30px"}}> This Section Is Still Under Development, Stay Tune! </h2>
+              </div>
+              
 
               <div style={{height: "1px", backgroundColor: "#07575B", marginLeft:"100px", marginRight:"100px", marginBottom:"0px", display: "flex"}}> </div>
             </div>
@@ -209,10 +216,10 @@ export default function Page() {
           <section id="Achievement">
             <div className = "bg-bgr-colors-4">
               <div className="text-center">
-                  <h1 style = {{fontFamily:"Inter", fontWeight:"700", fontSize:"24px", color:"#04043d", padding:"30px", paddingTop:"50px", lineHeight:"0"}}>
+                  <h1 className={inter.className} style = {{fontWeight:"700", fontSize:"24px", color:"#04043d", padding:"30px", paddingTop:"50px", lineHeight:"0"}}>
                     My Achievement
                   </h1>
-                  <h2 style = {{fontFamily:"Inter", fontWeight:"500", fontSize:"16px", color:"#333333", marginBottom:"20px"}}>
+                  <h2 className={inter.className} style = {{fontWeight:"500", fontSize:"16px", color:"#333333", marginBottom:"20px"}}>
                     These are some of my achievement that i got in in 4 years of my Informatics Competition journey
                   </h2>
 
@@ -308,17 +315,19 @@ export default function Page() {
           <section id="Project">
             <div className = "bg-bgr-colors-5">
               <div className="text-center">
-                  <h1 style = {{fontFamily:"Inter", fontWeight:"700", fontSize:"24px", color:"#04043d", padding:"30px", lineHeight:"0"}}>
+                  <h1 className={inter.className} style = {{fontWeight:"700", fontSize:"24px", color:"#04043d", padding:"30px", lineHeight:"0"}}>
                     My Project
                   </h1>
-                  <h2 style = {{fontFamily:"Inter", fontWeight:"500", fontSize:"16px", color:"#333333", marginBottom:"20px"}}>
+                  <h2 className={inter.className} style = {{fontWeight:"500", fontSize:"16px", color:"#333333", marginBottom:"20px"}}>
                     These are showcases of what I&apos;ve created so far
                   </h2>
 
                   <div style={{height: "1px", backgroundColor: "#07575B", marginLeft:"300px", marginRight:"300px", marginBottom:"0px", display: "flex"}}> </div>
               </div>
 
-              <h1 className="text-center" style = {{color:"#333333", margin:"30px"}}> This Section Is Still Under Development, Stay Tune! </h1>
+              <div>
+                <h1 className="text-center" style = {{color:"#333333", margin:"30px"}}> This Section Is Still Under Development, Stay Tune! </h1>
+              </div>
 
               <div style={{height: "1px", backgroundColor: "#07575B", marginLeft:"100px", marginRight:"100px", marginBottom:"0px", display: "flex"}}> </div>
             </div>
@@ -327,10 +336,10 @@ export default function Page() {
           <section id="Contact">
             <div className = "bg-white shadow-lg">
               <div className="text-center">
-                  <h1 style = {{fontFamily:"Inter", fontWeight:"700", fontSize:"24px", color:"#04043d", padding:"30px", paddingTop:"30px", paddingBottom:"0px"}}>
+                  <h1 className={inter.className} style = {{fontWeight:"700", fontSize:"24px", color:"#04043d", padding:"30px", paddingTop:"30px", paddingBottom:"0px"}}>
                     My Social Media
                   </h1>
-                  <h2 style = {{fontFamily:"Inter", fontWeight:"500", fontSize:"16px", color:"#04043d", marginBottom:"20px"}}>
+                  <h2 className={inter.className} style = {{fontWeight:"500", fontSize:"16px", color:"#04043d", marginBottom:"20px"}}>
                     Get In Touch With Me!
                   </h2>
               </div>
@@ -389,7 +398,11 @@ export default function Page() {
                 
               </div>
 
-              <pre className="text-center" style={{color:"#1E1E1E", paddingTop:"20px", fontFamily:"Inter", fontWeight:"Bold", fontSize:"16px"}}> F a r i z      R i f q i </pre>
+              <div className="text-center">
+                <pre className={inter.className} style={{color:"#1E1E1E", paddingTop:"20px", fontFamily:"Inter", fontWeight:"Bold", fontSize:"16px", lineHeight:"0.2"}}> F a r i z      R i f q i </pre>
+                <pre className="font-mono" style={{color:"#1E1E1E", paddingTop:"20px"}}> - faris361707@gmail.com - </pre>
+              </div>
+              
 
               <div className="flex items-center justify-center">
                 <Image
