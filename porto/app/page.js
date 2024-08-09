@@ -307,7 +307,7 @@ export default function Page() {
                     My Project
                   </h1>
                   <h2 style = {{fontFamily:"Inter", fontWeight:"500", fontSize:"16px", color:"#333333", marginBottom:"20px"}}>
-                    These are showcases of what i&apos;ve created so far
+                    These are showcases of what I&apos;ve created so far
                   </h2>
 
                   <div style={{height: "1px", backgroundColor: "#07575B", marginLeft:"300px", marginRight:"300px", marginBottom:"0px", display: "flex"}}> </div>
