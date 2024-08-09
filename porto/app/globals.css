@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import 'https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css';
+@import "https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -23,12 +23,7 @@ html {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @keyframes moveUpDownSmall {
@@ -61,15 +56,15 @@ body {
 
 .img-box {
   position: relative;
-  left : 27%;
+  left: 27%;
   height: 100%;
 }
 
-.img-box.img-list{
+.img-box.img-list {
   height: inherit;
 }
 
-.img-list.img-slider{
+.img-list.img-slider {
   height: inherit;
   display: flex;
   align-items: center;
@@ -83,7 +78,7 @@ body {
 
 .square-bg {
   position: absolute;
-  top : 15%;
+  top: 15%;
   scale: 1.4;
   animation: moveUpDownSmall 6s ease-in-out infinite;
 }
@@ -91,8 +86,8 @@ body {
 .img-item {
   position: absolute;
   width: 100%;
-  top : 15%;
-  animation: moveUpDownLarge 6s ease-in-out infinite;  
+  top: 15%;
+  animation: moveUpDownLarge 6s ease-in-out infinite;
   opacity: 0;
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
@@ -104,12 +99,12 @@ body {
 }
 
 .navigation {
-  position : absolute;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   z-index: 100;
   padding: 80px;
-  padding-top:300px;
+  padding-top: 300px;
   width: 100%;
 }
 
@@ -120,14 +115,20 @@ body {
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease;
-} 
+}
 
 .navigation span:hover {
-  background-color: #F4F4F9; /* Background color on hover */
+  background-color: #f4f4f9; /* Background color on hover */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
