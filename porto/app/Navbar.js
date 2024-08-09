@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -8,14 +9,14 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <img
-                  src="https://i.ibb.co.com/LnjKq1Q/image-2024-08-07-234753771.png"
+                <Image
+                  src="/images/ikuyo-kita.png"
                   alt="image-2024-08-07-234753771"
                   className="transition-transform duration-300 hover:scale-150"
                   border="0"
-                  width="70"
-                  height="70">
-                </img>
+                  width={70}
+                  height={70}
+                />
               </div>
             </div>
             <div className="hidden md:block">

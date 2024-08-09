@@ -1,4 +1,5 @@
-  import Navbar from "./Navbar";
+import Navbar from "./Navbar";
+import Image from 'next/image'
 
 
 export default function Page() {
@@ -35,21 +36,20 @@ export default function Page() {
 
                   <div style={{padding: "20px", paddingLeft:"0px", paddingTop:"40px", display: "flex", alignItems: "center"}}>
                 <a href="https://www.linkedin.com/in/mochammad-fariz-rifqi-rizqulloh-077081256/">
-                  <img
-                    src="https://i.ibb.co.com/k3BZYyV/image-2024-08-08-210711847.png"
+                  <Image
+                    src="/images/linkedin_logo.png"
                     alt="LinkedIn Icon"
                     className="transition-transform duration-300 hover:scale-110 hover:shadow-lg"
                     border="0"
-                    height="50px"
-                    width="50px"
+                    height={50}
+                    width={50}
                     style={{borderRadius:"25px"}}
-                    >   
-                  </img>
+                    />   
                 </a>
 
                 <a href="https://www.instagram.com/ryzz.36/">
-                  <img
-                    src="https://i.ibb.co.com/2sYW2Rc/image-2024-08-08-211634162.png"
+                  <Image
+                    src="/images/instagram_logo.png"
                     alt="Instagram Icon"
                     className="transition-transform duration-300 hover:scale-110 hover:shadow-lg"
                     style={{
@@ -57,36 +57,33 @@ export default function Page() {
                       marginLeft:"40px"
                     }}
                     border="0"
-                    height="50px"
-                    width="50px"
-                    >   
-                  </img>
+                    height={50}
+                    width={50}
+                    />   
                 </a>
 
                 <a href="https://www.youtube.com/@farisrifqi36">
-                  <img
-                    src="https://i.ibb.co.com/rmGpPdD/image-2024-08-08-211937286.png"
+                  <Image
+                    src="/images/youtube_logo.png"
                     className="transition-transform duration-300 hover:scale-110 hover:shadow-lg"
                     alt="Youtube Icon"
                     border="0"
-                    height="50px"
-                    width="50px"
+                    height={50}
+                    width={50}
                     style={{borderRadius:"10px", marginLeft:"40px"}}
-                    >   
-                  </img>
+                    />   
                 </a>
 
                 <a href="https://codeforces.com/profile/Farr">
-                  <img
-                    src="https://i.ibb.co.com/3rrzT3n/image-2024-08-08-211848254.png"
+                  <Image
+                    src="/images/codeforces_logo.png"
                     className="transition-transform duration-300 hover:scale-110 hover:shadow-lg"
                     alt="Codeforces Icon"
                     border="0"
-                    height="50px"
-                    width="50px"
+                    height={50}
+                    width={50}
                     style={{borderRadius:"10px", marginLeft:"40px"}}
-                    >   
-                  </img>
+                  />   
                 </a>
 
                 <a href="/">
@@ -96,14 +93,13 @@ export default function Page() {
               </div>
 
                 </div>
-                <img
+                <Image
                   src="/images/FotoFarizEditedEnchanted.png"
                   alt="Photo of Fariz" 
                   border="0"
-                  height="500px"
-                  width="500px"
-                  >
-                </img>
+                  height={500}
+                  width={500}
+                />
                 <br></br>
               </div>
               
@@ -225,16 +221,20 @@ export default function Page() {
               <div className="carousel">
                 <div className = "navigation">
                   <span className = "prev-btn">
-                    <img
-                      src="images/chevron-left-regular-60.png"
+                    <Image
+                      src="/images/chevron-left-regular-60.png"
                       alt="prev-btn"
+                      width={60}
+                      height={60}
                     />
                   </span>
 
                   <span className="next-btn"> 
-                    <img
-                      src="images/chevron-right-regular-60.png"
+                    <Image
+                      src="/images/chevron-right-regular-60.png"
                       alt="next-btn"
+                      width={60}
+                      height={60}
                     />
                   </span>
                 </div>
@@ -243,53 +243,57 @@ export default function Page() {
                   <div className="img-list">
                     <div className="img-slider">
                       <div className="square-bg">
-                        <img src="images/square_bg-removebg.png"></img>
+                        <Image 
+                          src="/images/square_bg-removebg.png"
+                          width={666}
+                          height={375}
+                        />
                       </div>
 
                       <div className="img-item">
-                        <img src="/images/slide1.png"></img>
+                        <Image src="/images/slide1.png" width={666} height={375}/>
                       </div>
                       <div className="img-item">
-                        <img src="/images/slide2.png"></img>
+                        <Image src="/images/slide2.png" width={666} height={375}/>
                       </div>
                       <div className="img-item">
-                        <img src="/images/slide3.png"></img>
+                        <Image src="/images/slide3.png" width={666} height={375}/>
                       </div> 
                       <div className="img-item">
-                        <img src="/images/slide4.png"></img>
+                        <Image src="/images/slide4.png" width={666} height={375}/>
                       </div> 
                       <div className="img-item">
-                        <img src="/images/slide5.png"></img>
+                        <Image src="/images/slide5.png" width={666} height={375}/>
                       </div> 
                       <div className="img-item">
-                        <img src="/images/slide6.png"></img>
+                        <Image src="/images/slide6.png" width={666} height={375}/>
                       </div> 
                       <div className="img-item">
-                        <img src="/images/slide7.png"></img>
+                        <Image src="/images/slide7.png" width={666} height={375}/>
                       </div> 
                       <div className="img-item">
-                        <img src="/images/slide8.png"></img>
+                        <Image src="/images/slide8.png" width={666} height={375}/>
                       </div> 
                       <div className="img-item">
-                        <img src="/images/slide9.png"></img>
+                        <Image src="/images/slide9.png" width={666} height={375}/>
                       </div> 
                       <div className="img-item">
-                        <img src="/images/slide10.png"></img>
+                        <Image src="/images/slide10.png" width={666} height={375}/>
                       </div> 
                       <div className="img-item">
-                        <img src="/images/slide11.png"></img>
+                        <Image src="/images/slide11.png" width={666} height={375}/>
                       </div> 
                       <div className="img-item">
-                        <img src="/images/slide12.png"></img>
+                        <Image src="/images/slide12.png" width={666} height={375}/>
                       </div> 
                       <div className="img-item">
-                        <img src="/images/slide13.png"></img>
+                        <Image src="/images/slide13.png" width={666} height={375}/>
                       </div> 
                       <div className="img-item">
-                        <img src="/images/slide14.png"></img>
+                        <Image src="/images/slide14.png" width={666} height={375}/>
                       </div> 
                       <div className="img-item">
-                        <img src="/images/slide15.png"></img>
+                        <Image src="/images/slide15.png" width={666} height={375}/>
                       </div> 
                     </div>
                   </div>
@@ -332,21 +336,20 @@ export default function Page() {
 
               <div className="flex items-center justify-center" style={{padding: "20px", display: "flex", alignItems: "center"}}>
                 <a href="https://www.linkedin.com/in/mochammad-fariz-rifqi-rizqulloh-077081256/">
-                  <img
-                    src="https://i.ibb.co.com/k3BZYyV/image-2024-08-08-210711847.png"
+                  <Image
+                    src="/images/linkedin_logo.png"
                     alt="LinkedIn Icon"
                     className="transition-transform duration-300 hover:scale-110 hover:shadow-lg"
                     border="0"
-                    height="40px"
-                    width="40px"
+                    height={40}
+                    width={40}
                     style={{borderRadius:"25px"}}
-                    >   
-                  </img>
+                  />   
                 </a>
 
                 <a href="https://www.instagram.com/ryzz.36/">
-                  <img
-                    src="https://i.ibb.co.com/2sYW2Rc/image-2024-08-08-211634162.png"
+                  <Image
+                    src="/images/instagram_logo.png"
                     alt="Instagram Icon"
                     className="transition-transform duration-300 hover:scale-110 hover:shadow-lg"
                     style={{
@@ -354,36 +357,33 @@ export default function Page() {
                       marginLeft:"40px"
                     }}
                     border="0"
-                    height="40px"
-                    width="40px"
-                    >   
-                  </img>
+                    height={40}
+                    width={40}
+                  />   
                 </a>
 
                 <a href="https://www.youtube.com/@farisrifqi36">
-                  <img
-                    src="https://i.ibb.co.com/rmGpPdD/image-2024-08-08-211937286.png"
+                  <Image
+                    src="/images/youtube_logo.png"
                     className="transition-transform duration-300 hover:scale-110 hover:shadow-lg"
                     alt="Youtube Icon"
                     border="0"
-                    height="40px"
-                    width="40px"
+                    height={40}
+                    width={40}
                     style={{borderRadius:"10px", marginLeft:"40px"}}
-                    >   
-                  </img>
+                  />
                 </a>
 
                 <a href="https://codeforces.com/profile/Farr">
-                  <img
-                    src="https://i.ibb.co.com/3rrzT3n/image-2024-08-08-211848254.png"
+                  <Image
+                    src="/images/codeforces_logo.png"
                     className="transition-transform duration-300 hover:scale-110 hover:shadow-lg"
                     alt="Codeforces Icon"
                     border="0"
-                    height="40px"
-                    width="40px"
+                    height={40}
+                    width={40}
                     style={{borderRadius:"10px", marginLeft:"40px"}}
-                    >   
-                  </img>
+                  />   
                 </a>
                 
               </div>
@@ -391,16 +391,15 @@ export default function Page() {
               <pre className="text-center" style={{color:"#1E1E1E", paddingTop:"20px", fontFamily:"Inter", fontWeight:"Bold", fontSize:"16px"}}> F a r i z      R i f q i </pre>
 
               <div className="flex items-center justify-center">
-                <img
-                  src="https://i.ibb.co.com/LnjKq1Q/image-2024-08-07-234753771.png"
-                  alt="image-2024-08-07-234753771"
+                <Image
+                  src="/images/ikuyo-kita.png"
+                  alt="ayank"
                   className="transition-transform duration-300 hover:scale-150"
                   border="0"
                   style={{margin:"20px"}}
-                  width="70px"
-                  height="70px"
-                  >
-                </img>
+                  width={70}
+                  height={70}
+                />
               </div>
             </div>
           </section>
