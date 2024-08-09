@@ -13,10 +13,10 @@ export default function Page() {
               <div style={{padding: "20px", display: "flex", alignItems: "center", marginTop:"50px"}}>
                 <div style={{marginRight:"200px", marginLeft:"50px", fontFamily:"Inter"}}>
                   <h1 style={{ fontSize: "16px", color:"#04043d", lineHeight:"0", marginTop:"40px"}}>
-                    Let's learn something new together!
+                    Let&apos;s learn something new together!
                   </h1>
                   <h1 style={{ fontSize: "72px", fontWeight:"Bold"}}>
-                    <span style = {{color:"#04043d"}}>Hi, I'm </span>
+                    <span style = {{color:"#04043d"}}>Hi, I&apos;m </span>
                     <span style = {{color:"#0d98b8"}}>Fariz Rifqi</span>
                   </h1>
                   <div style={{height: "1px", backgroundColor: "#003B46", margin: "5px" }}>
@@ -307,7 +307,7 @@ export default function Page() {
                     My Project
                   </h1>
                   <h2 style = {{fontFamily:"Inter", fontWeight:"500", fontSize:"16px", color:"#333333", marginBottom:"20px"}}>
-                    These are showcases of what i've created so far
+                    These are showcases of what i&apos;ve created so far
                   </h2>
 
                   <div style={{height: "1px", backgroundColor: "#07575B", marginLeft:"300px", marginRight:"300px", marginBottom:"0px", display: "flex"}}> </div>
