@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import Image from 'next/image'
+import Script from 'next/script'
 
 
 export default function Page() {
