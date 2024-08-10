@@ -198,14 +198,45 @@ export default function Page() {
                     Skills
                   </h1>
                   <h2 className={inter.className} style = {{fontWeight:"500", fontSize:"16px", color:"#333333", marginBottom:"20px"}}>
-                    What am i capable of?
+                    What am i capable of? <br></br> <br></br>
+                    sowwy this section is still under development &gt;.&lt;
                   </h2>
 
                   <div style={{height: "1px", backgroundColor: "#07575B", marginLeft:"300px", marginRight:"300px", marginBottom:"0px", display: "flex"}}> </div>
               </div>
               
               <div className={inter.className}>
-                <h2 className="text-center" style = {{color:"#333333", margin:"30px"}}> This Section Is Still Under Development, Stay Tune! </h2>
+                <div className="grid grid-cols-3" style={{padding:"50px"}}>
+                  <div className="text-center">
+                    <h1 style = {{color:"#333333", fontWeight:"700", fontSize:"24px"}}> Hard Skill </h1>
+                    <p style = {{color:"#333333", fontWeight:"400", fontSize:"16px"}}>
+                      Competitive Programming <br></br>
+                      Data Structures and Algorithms <br></br>
+                      Mathematical Programming <br></br>
+                    </p>
+                  </div>
+                  <div className="text-center">
+                    <h1 style = {{color:"#333333", fontWeight:"700", fontSize:"24px"}}> Soft Skill </h1>
+                    <p style = {{color:"#333333", fontWeight:"400", fontSize:"16px"}}>
+                      Problem Solving <br></br>
+                      Critical Thinking <br></br>
+                      Teamwork <br></br>
+                      Adaptability <br></br>
+                      Resilience <br></br>
+                      Atention to Detail <br></br>
+                    </p>
+                  </div>
+                  <div className="text-center">
+                    <h1 style = {{color:"#333333", fontWeight:"700", fontSize:"24px"}}> Other </h1>
+                    <p style = {{color:"#333333", fontWeight:"400", fontSize:"16px"}}>
+                      C++ <br></br>
+                      Python <br></br>
+                      HTML <br></br>
+                      CSS <br></br>
+                      JavaScript <br></br>
+                    </p>
+                  </div>
+                </div>
               </div>
               
 
@@ -320,16 +351,77 @@ export default function Page() {
                   </h1>
                   <h2 className={inter.className} style = {{fontWeight:"500", fontSize:"16px", color:"#333333", marginBottom:"20px"}}>
                     These are showcases of what I&apos;ve created so far
+
+                    <br></br><br></br>
+
+                    sowwy this section is still under development &gt;.&lt;
                   </h2>
+                  
+                  <div className = "flex items-center justify-center">
+                    <Image
+                      src="/images/ikuyo-kita-troubled.jpg"
+                      alt="ikuyo-kita-ayankku"
+                      className="transition-transform duration-300 hover:scale-110 hover:shadow-lg"
+                      border="0"
+                      height={200}
+                      width={200}
+                      style={{borderRadius:"50px", margin:"50px", marginTop:"10px"}}
+                    />   
+                  </div>
 
                   <div style={{height: "1px", backgroundColor: "#07575B", marginLeft:"300px", marginRight:"300px", marginBottom:"0px", display: "flex"}}> </div>
               </div>
 
-              <div>
-                <h1 className="text-center" style = {{color:"#333333", margin:"30px"}}> This Section Is Still Under Development, Stay Tune! </h1>
+              <div className = "flex items-center justify-center">
+                <div className = {inter.className} style={{fontSize:"24px", color:"#333333", padding:"30px", fontWeight:"600"}}>
+                  <h1> Tubes Daspro </h1>
+                </div>
+              </div>
+              
+              <div className = "flex items-center justify-center">
+                <Image
+                  src="/images/demo-daspro.gif"
+                  alt="demo-daspro"
+                  className="transition-transform duration-300 hover:scale-110 hover:shadow-lg"
+                  border="0"
+                  height={600}
+                  width={800}
+                  style={{borderRadius:"50px", paddingTop:"0px"}}
+                />  
               </div>
 
-              <div style={{height: "1px", backgroundColor: "#07575B", marginLeft:"100px", marginRight:"100px", marginBottom:"0px", display: "flex"}}> </div>
+              <div className = "flex items-center justify-center">
+                <div className = {inter.className} style={{fontSize:"16px", color:"#333333", padding:"30px", fontWeight:"400"}}>
+                  <h1> Proyek ini merupakan proyek yang saya lakukan untuk memenuhi spesifikasi tugas besar mata kuliah Dasar Pemrograman (IF1201) </h1>
+                </div>
+              </div>
+
+              <div className = "flex items-center justify-center">
+                <div className = {inter.className} style={{fontSize:"24px", color:"#333333", padding:"30px", fontWeight:"600"}}>
+                  <h1> Website Portofolio </h1>
+                </div>
+              </div>
+              
+              <div className = "flex items-center justify-center">
+                <Image
+                  src="/images/demo-website-porto.gif"
+                  alt="demo-wesbite-porto"
+                  className="transition-transform duration-300 hover:scale-110 hover:shadow-lg"
+                  border="0"
+                  height={600}
+                  width={800}
+                  style={{borderRadius:"50px", paddingTop:"0px"}}
+                />  
+              </div>
+
+              <div className = "flex items-center justify-center">
+                <div className = {inter.className} style={{fontSize:"16px", color:"#333333", padding:"30px", fontWeight:"400"}}>
+                  <h1> Simple but elegant website built using HTML, CSS, and little javascript. Unfortunately, this website still hasn&apos;t support mobile</h1>
+                  <h2 className="text-center"> This website will be the proof of my journey!</h2>
+                </div>
+              </div>
+
+              <div style={{height: "1px", backgroundColor: "#07575B", marginLeft:"100px", marginRight:"100px", marginBottom:"0px", marginTop:"100px", display: "flex"}}> </div>
             </div>
           </section>
             
@@ -403,7 +495,6 @@ export default function Page() {
                 <pre className="font-mono" style={{color:"#1E1E1E", paddingTop:"20px"}}> - faris361707@gmail.com - </pre>
               </div>
               
-
               <div className="flex items-center justify-center">
                 <Image
                   src="/images/ikuyo-kita.png"
